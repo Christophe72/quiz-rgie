@@ -1,0 +1,333 @@
+{
+  "RGIE_Belgique_FAQ": [
+    {
+      "question": "Quel est l'objectif principal d'une prise de terre dans une installation électrique ?",
+      "reponse": "Écouler les courants de défaut vers la terre",
+      "explication": "La prise de terre permet d'écouler les courants de défaut vers la terre pour éviter les électrocutions. En son absence, le courant de défaut pourrait passer par une personne en contact avec un appareil défectueux, ce qui peut être mortel.",
+      "options": [
+        "Améliorer le confort électrique",
+        "Écouler les courants de défaut vers la terre",
+        "Augmenter la tension disponible",
+        "Réduire la consommation d'énergie"
+      ]
+    },
+    {
+      "question": "Quelle est la résistance maximale autorisée pour une prise de terre ?",
+      "reponse": "30 Ω",
+      "explication": "La résistance de dispersion de la prise de terre ne peut pas dépasser 30 Ω (ou 100 Ω moyennant des mesures complémentaires).",
+      "options": ["10 Ω", "30 Ω", "50 Ω", "100 Ω"]
+    },
+    {
+      "question": "Quelle est la section minimale requise pour le conducteur de terre ?",
+      "reponse": "16 mm²",
+      "explication": "Le conducteur de terre doit avoir une section minimale de 16 mm².",
+      "options": ["6 mm²", "10 mm²", "16 mm²", "25 mm²"]
+    },
+    {
+      "question": "Quels sont les éléments à relier à la liaison équipotentielle principale ?",
+      "reponse": "Les conduites d'eau, de gaz, de chauffage et la charpente métallique",
+      "explication": "La borne principale de terre doit être reliée aux éléments conducteurs étrangers tels que les conduites d'eau, de gaz, de chauffage central, et la charpente métallique du bâtiment.",
+      "options": [
+        "Uniquement les conduites d'eau",
+        "Les conduites d'eau, de gaz, de chauffage et la charpente métallique",
+        "Seulement la charpente métallique",
+        "Les appareils électroménagers"
+      ]
+    },
+    {
+      "question": "Quel est le critère de sécurité minimal pour le matériel électrique conforme au RGIE ?",
+      "reponse": "Marquage CE et degré de protection IP2X minimum",
+      "explication": "Le matériel doit être conforme aux normes (marquage CE ou autres certifications comme CEBEC, VDE, etc.) et avoir un degré de protection minimal IPXX-B (IP2X) contre les contacts directs.",
+      "options": [
+        "Uniquement le marquage CE",
+        "Marquage CE et degré de protection IP2X minimum",
+        "Certification VDE uniquement",
+        "Aucune certification requise"
+      ]
+    },
+    {
+      "question": "Quelle est la hauteur recommandée pour un tableau de répartition ?",
+      "reponse": "Environ 1,5 mètre",
+      "explication": "Les tableaux de répartition doivent être placés à environ 1,5 mètre de hauteur et être facilement accessibles.",
+      "options": [
+        "1 mètre",
+        "Environ 1,5 mètre",
+        "2 mètres",
+        "Au niveau du sol"
+      ]
+    },
+    {
+      "question": "Quel est le rôle principal d'un différentiel dans une installation électrique ?",
+      "reponse": "Détecter les courants de fuite et protéger contre l'électrocution",
+      "explication": "Le différentiel détecte les courants de fuite vers la terre et protège contre les risques d'électrocution et d'incendie. Un différentiel de 300 mA maximum doit être installé à l'origine de l'installation.",
+      "options": [
+        "Augmenter la puissance disponible",
+        "Détecter les courants de fuite et protéger contre l'électrocution",
+        "Réduire la consommation d'énergie",
+        "Améliorer la qualité de l'électricité"
+      ]
+    },
+    {
+      "question": "Quelle est la sensibilité requise pour un différentiel dans une salle de bains ?",
+      "reponse": "30 mA (ou 10 mA dans le volume 2)",
+      "explication": "Dans les salles de bains, un différentiel de 30 mA est requis pour les circuits alimentant des appareils comme les machines à laver. Si une prise est installée dans le volume 2, la sensibilité doit être de 10 mA.",
+      "options": [
+        "300 mA",
+        "30 mA (ou 10 mA dans le volume 2)",
+        "100 mA",
+        "500 mA"
+      ]
+    },
+    {
+      "question": "Quelle est la section minimale des conducteurs pour un circuit d'éclairage ?",
+      "reponse": "1,5 mm²",
+      "explication": "La section minimale pour un circuit d'éclairage est de 1,5 mm².",
+      "options": ["1 mm²", "1,5 mm²", "2,5 mm²", "4 mm²"]
+    },
+    {
+      "question": "Combien de prises sont autorisées par circuit ?",
+      "reponse": "8 prises maximum",
+      "explication": "Le nombre de prises est limité à 8 par circuit. Dans un circuit mixte (prises et éclairage), chaque point lumineux est assimilé à une prise.",
+      "options": [
+        "6 prises maximum",
+        "8 prises maximum",
+        "10 prises maximum",
+        "Pas de limitation"
+      ]
+    },
+    {
+      "question": "Quelles sont les règles pour les prises dans une salle de bains ?",
+      "reponse": "Prises sécurité enfant avec broche de terre, interdites dans le volume 0",
+      "explication": "Les prises doivent être de type 'sécurité enfant', avec une broche de terre raccordée. Elles sont interdites dans le volume 0 (baignoire ou douche) et soumises à des restrictions dans les volumes 1 et 2 (ex. : différentiel 10 mA pour le volume 2).",
+      "options": [
+        "Aucune restriction particulière",
+        "Prises sécurité enfant avec broche de terre, interdites dans le volume 0",
+        "Uniquement des prises étanches",
+        "Prises sans broche de terre autorisées"
+      ]
+    },
+    {
+      "question": "Qu'est-ce que la TBTS (Très Basse Tension de Sécurité) ?",
+      "reponse": "Tension ≤ 50 V (peau sèche), ≤ 25 V (peau mouillée), ≤ 12 V (peau immergée)",
+      "explication": "La TBTS est une tension réduite (≤ 50 V pour peau sèche, ≤ 25 V pour peau mouillée, ≤ 12 V pour peau immergée) utilisée pour minimiser les risques d'électrocution, notamment dans les salles de bains ou les environnements humides.",
+      "options": [
+        "Tension ≤ 100 V dans tous les cas",
+        "Tension ≤ 50 V (peau sèche), ≤ 25 V (peau mouillée), ≤ 12 V (peau immergée)",
+        "Tension ≤ 230 V avec protection différentielle",
+        "Tension variable selon l'installation"
+      ]
+    },
+    {
+      "question": "Quelles sont les principales obligations du propriétaire d'une installation électrique ?",
+      "reponse": "Entretien, respect du RGIE, test mensuel des différentiels, contrôles obligatoires",
+      "explication": "Le propriétaire doit : assurer l'entretien, respecter le RGIE, signaler les accidents, tester mensuellement les différentiels, détenir le dossier électrique, et faire contrôler l'installation avant sa mise en service ou après des modifications importantes.",
+      "options": [
+        "Uniquement payer les factures d'électricité",
+        "Entretien, respect du RGIE, test mensuel des différentiels, contrôles obligatoires",
+        "Seulement faire appel à un électricien en cas de panne",
+        "Aucune obligation particulière"
+      ]
+    },
+    {
+      "question": "Quand une visite de contrôle est-elle obligatoire lors de la vente d'une habitation ?",
+      "reponse": "Pour les installations d'avant le 1er octobre 1981 sans modifications importantes",
+      "explication": "Une visite de contrôle est obligatoire pour les installations réalisées avant le 1er octobre 1981 n'ayant pas subi de modifications importantes. Le procès-verbal doit être remis à l'acheteur et mentionné dans l'acte de vente.",
+      "options": [
+        "Pour toutes les installations sans exception",
+        "Pour les installations d'avant le 1er octobre 1981 sans modifications importantes",
+        "Uniquement pour les installations de plus de 50 ans",
+        "Jamais obligatoire lors d'une vente"
+      ]
+    },
+    {
+      "question": "Quelles sont les principales dérogations pour les anciennes installations (avant 1981) ?",
+      "reponse": "Pas de liaison équipotentielle, conducteurs 1 mm², prises sans terre tolérées",
+      "explication": "Les dérogations incluent : pas de liaison équipotentielle principale, conducteurs de 1 mm² minimum, prises sans broche de terre admises, et un seul circuit d'éclairage autorisé. Les différentiels de type AC et In < 40 A sont également tolérés.",
+      "options": [
+        "Aucune dérogation possible",
+        "Pas de liaison équipotentielle, conducteurs 1 mm², prises sans terre tolérées",
+        "Uniquement des dérogations sur les sections de conducteurs",
+        "Dérogations limitées aux différentiels"
+      ]
+    }
+  ],
+  "RGIE_2019_Technique_Avance": [
+    {
+      "question": "Quelle est la section minimale du conducteur PEN (protection et neutre combinés) selon le RGIE 2019 ?",
+      "reponse": "10 mm² en cuivre ou 16 mm² en aluminium",
+      "explication": "Le conducteur PEN doit avoir une section minimale de 10 mm² en cuivre ou 16 mm² en aluminium pour assurer à la fois la fonction de protection et de neutre.",
+      "options": [
+        "6 mm² en cuivre ou 10 mm² en aluminium",
+        "10 mm² en cuivre ou 16 mm² en aluminium",
+        "16 mm² en cuivre ou 25 mm² en aluminium",
+        "25 mm² en cuivre ou 35 mm² en aluminium"
+      ]
+    },
+    {
+      "question": "Quel est le courant nominal maximal pour un disjoncteur différentiel de type AC selon le RGIE 2019 ?",
+      "reponse": "63 A",
+      "explication": "Les disjoncteurs différentiels de type AC sont limités à un courant nominal maximal de 63 A. Au-delà, des types A ou B sont requis.",
+      "options": ["40 A", "63 A", "80 A", "100 A"]
+    },
+    {
+      "question": "Quelle est la distance minimale entre une prise de courant et un point d'eau dans une cuisine ?",
+      "reponse": "60 cm",
+      "explication": "Dans une cuisine, les prises doivent être installées à au moins 60 cm d'un point d'eau (évier, robinet) pour éviter les projections.",
+      "options": ["30 cm", "60 cm", "1 mètre", "1,5 mètre"]
+    },
+    {
+      "question": "Quelle est la classe d'isolation requise pour les luminaires installés dans le volume 1 d'une salle de bains ?",
+      "reponse": "Classe II (double isolation)",
+      "explication": "Dans le volume 1 des salles de bains, seuls les luminaires de classe II (double isolation) ou TBTS sont autorisés.",
+      "options": [
+        "Classe I (avec terre)",
+        "Classe II (double isolation)",
+        "Classe III (très basse tension)",
+        "Toutes classes autorisées"
+      ]
+    },
+    {
+      "question": "Quel est le degré de protection IP minimal requis pour un matériel installé dans le volume 2 d'une salle de bains ?",
+      "reponse": "IPX4",
+      "explication": "Le volume 2 des salles de bains nécessite un degré de protection minimal IPX4 contre les projections d'eau.",
+      "options": ["IPX1", "IPX4", "IPX5", "IPX7"]
+    },
+    {
+      "question": "Quelle est la section minimale pour un conducteur de liaison équipotentielle supplémentaire ?",
+      "reponse": "2,5 mm² en cuivre",
+      "explication": "Les liaisons équipotentielles supplémentaires doivent avoir une section minimale de 2,5 mm² en cuivre.",
+      "options": ["1,5 mm²", "2,5 mm²", "4 mm²", "6 mm²"]
+    },
+    {
+      "question": "Quel est le nombre maximal de points d'utilisation autorisé sur un circuit d'éclairage ?",
+      "reponse": "8 points lumineux",
+      "explication": "Un circuit d'éclairage ne peut alimenter plus de 8 points lumineux, chacun pouvant avoir plusieurs sources lumineuses.",
+      "options": [
+        "6 points lumineux",
+        "8 points lumineux",
+        "10 points lumineux",
+        "12 points lumineux"
+      ]
+    },
+    {
+      "question": "Quelle est la tension limite conventionnelle en milieu sec selon le RGIE 2019 ?",
+      "reponse": "50 V",
+      "explication": "En milieu sec, la tension limite conventionnelle est de 50 V. Au-delà, des mesures de protection contre les contacts directs sont obligatoires.",
+      "options": ["25 V", "50 V", "120 V", "230 V"]
+    },
+    {
+      "question": "Quel type de différentiel est obligatoire pour protéger un circuit alimentant un lave-linge ?",
+      "reponse": "Type A minimum",
+      "explication": "Les circuits alimentant des appareils avec des composants électroniques comme les lave-linges nécessitent un différentiel de type A minimum.",
+      "options": ["Type AC", "Type A minimum", "Type B", "Tous types autorisés"]
+    },
+    {
+      "question": "Quelle est la hauteur minimale d'installation pour une prise de courant dans un local d'habitation ?",
+      "reponse": "5 cm du sol fini",
+      "explication": "Les prises de courant doivent être installées à au moins 5 cm du sol fini pour éviter l'humidité et faciliter le nettoyage.",
+      "options": [
+        "0 cm (au sol)",
+        "5 cm du sol fini",
+        "15 cm du sol fini",
+        "30 cm du sol fini"
+      ]
+    },
+    {
+      "question": "Quel est le courant de fuite maximal autorisé pour une installation domestique selon le RGIE ?",
+      "reponse": "50% du courant nominal du différentiel de tête",
+      "explication": "Le courant de fuite total d'une installation ne doit pas dépasser 50% du courant nominal du différentiel de tête pour éviter les déclenchements intempestifs.",
+      "options": [
+        "10% du différentiel",
+        "25% du différentiel",
+        "50% du différentiel",
+        "75% du différentiel"
+      ]
+    },
+    {
+      "question": "Quelle est la section minimale pour le conducteur principal de terre ?",
+      "reponse": "16 mm² en cuivre ou 25 mm² en aluminium",
+      "explication": "Le conducteur principal de terre doit avoir une section minimale de 16 mm² en cuivre ou 25 mm² en aluminium.",
+      "options": [
+        "10 mm² en cuivre ou 16 mm² en aluminium",
+        "16 mm² en cuivre ou 25 mm² en aluminium",
+        "25 mm² en cuivre ou 35 mm² en aluminium",
+        "35 mm² en cuivre ou 50 mm² en aluminium"
+      ]
+    },
+    {
+      "question": "Quelle est la fréquence obligatoire pour le test des dispositifs différentiels ?",
+      "reponse": "Mensuelle",
+      "explication": "Les dispositifs différentiels doivent être testés mensuellement à l'aide du bouton test pour vérifier leur bon fonctionnement.",
+      "options": ["Hebdomadaire", "Mensuelle", "Trimestrielle", "Annuelle"]
+    },
+    {
+      "question": "Dans quel volume des salles de bains l'installation d'un chauffe-eau électrique instantané est-elle autorisée ?",
+      "reponse": "Volume 2 et au-delà",
+      "explication": "Les chauffe-eau électriques instantanés ne peuvent être installés qu'à partir du volume 2 des salles de bains, avec protection différentielle 30 mA.",
+      "options": [
+        "Volume 0",
+        "Volume 1",
+        "Volume 2 et au-delà",
+        "Interdit dans tous les volumes"
+      ]
+    },
+    {
+      "question": "Quelle est la puissance maximale autorisée pour un circuit de prises de 16 A en 230 V ?",
+      "reponse": "3680 W",
+      "explication": "Un circuit de prises de 16 A en 230 V peut supporter une puissance maximale de 3680 W (16 A × 230 V).",
+      "options": ["2300 W", "3680 W", "4600 W", "5500 W"]
+    }
+  ],
+  "RGIE_Belgique_Installation_Electrique": [
+    {
+      "question": "Quel est le rôle principal d'un disjoncteur dans une installation électrique ?",
+      "reponse": "Protéger contre les surcharges et les courts-circuits",
+      "options": [
+        "Augmenter la tension",
+        "Protéger contre les surcharges et les courts-circuits",
+        "Réduire la consommation d'énergie",
+        "Améliorer la qualité de l'électricité"
+      ]
+    },
+    {
+      "question": "Quelle est la norme de sécurité pour les installations électriques en Belgique ?",
+      "reponse": "RGIE (Règlement Général sur les Installations Électriques)",
+      "options": [
+        "NBN C 61-001",
+        "RGIE (Règlement Général sur les Installations Électriques)",
+        "IEC 60364",
+        "NF C 15-100"
+      ]
+    },
+    {
+      "question": "Quel est le but d'une protection différentielle dans une installation électrique ?",
+      "reponse": "Détecter les fuites de courant et couper l'alimentation",
+      "options": [
+        "Augmenter la puissance disponible",
+        "Détecter les fuites de courant et couper l'alimentation",
+        "Réduire la consommation d'énergie",
+        "Améliorer le confort électrique"
+      ]
+    },
+    {
+      "question": "Quelle est la section minimale requise pour les conducteurs d'une installation électrique domestique ?",
+      "reponse": "1,5 mm² pour l'éclairage et 2,5 mm² pour les prises",
+      "options": [
+        "0,75 mm²",
+        "1,5 mm² pour l'éclairage et 2,5 mm² pour les prises",
+        "2,5 mm² pour tous les circuits",
+        "4 mm² pour tous les circuits"
+      ]
+    },
+    {
+      "question": "Quel est le rôle d'un parafoudre dans une installation électrique ?",
+      "reponse": "Protéger contre les surtensions transitoires dues à la foudre",
+      "options": [
+        "Protéger contre les surcharges",
+        "Protéger contre les surtensions transitoires dues à la foudre",
+        "Améliorer la qualité de l'électricité",
+        "Réduire la consommation d'énergie"
+      ]
+    }
+  ]
+}
