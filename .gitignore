@@ -107,3 +107,8 @@ ehthumbs.db
 
 # Docker
 *.log
+
+# Prisma/SQLite (server)
+/server/node_modules/
+/server/prisma/dev.db
+/server/prisma/dev.db-journal

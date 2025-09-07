@@ -9,6 +9,19 @@
       content="Quiz RGIE - Application de quiz interactive"
     />
     <title>Quiz RGIE</title>
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("darkMode");
+          if (saved && JSON.parse(saved) === true) {
+            document.documentElement.classList.add("dark-mode");
+            document.body &&
+              document.body.classList &&
+              document.body.classList.add("dark-mode");
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <noscript

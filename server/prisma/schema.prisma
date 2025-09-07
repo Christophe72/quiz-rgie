@@ -1,0 +1,28 @@
+// Prisma schema for storing quiz sessions in SQLite
+// Run `npx prisma generate` and `npx prisma migrate dev --name init` inside server folder
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Session {
+  id              String   @id
+  name            String?
+  category        String?
+  currentQuestion Int      @default(0)
+  score           Int      @default(0)
+  showResult      Boolean  @default(false)
+  selectedOption  String?
+  showExplanation Boolean  @default(false)
+  answers         String?
+  startedAt       DateTime?
+  finishedAt      DateTime?
+  total           Int      @default(0)
+  updatedAt       DateTime @updatedAt
+  createdAt       DateTime @default(now())
+}

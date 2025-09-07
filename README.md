@@ -8,7 +8,7 @@ Une application web interactive pour tester vos connaissances sur le **Règlemen
 
 ## 📋 Description
 
-Cette application propose un quiz interactif sur le RGIE belge avec différentes catégories de questions, des explications détaillées, et un système de score avec animations de célébration.
+Cette application propose un quiz interactif sur le RGIE belge avec différentes catégories de questions, des explications détaillées, et un système de score avec animations de célébration. Elle inclut une gestion de sessions avec sauvegarde automatique, une page de résultats, et un mode sombre/clair persistant.
 
 ### ⚡ Fonctionnalités principales
 
@@ -18,13 +18,17 @@ Cette application propose un quiz interactif sur le RGIE belge avec différentes
   - RGIE 2019 - Technique avancée (15 questions)
   - Installation électrique (5 questions)
 
-- **Mode sombre/clair** 🌙☀️ avec basculement intuitif
+- **Gestion de sessions** : Chaque session a un ID unique et un nom de participant
+- **Sauvegarde automatique** : Progression et résultats sauvegardés en localStorage
+- **Reprise de session** : Reprendre une session interrompue depuis l'écran d'accueil
+- **Page de résultats** : Tableau des sessions avec nom, score, dates et ID
+- **Mode sombre/clair** 🌙☀️ avec basculement intuitif et persistance
 - **Interface moderne** avec sélection de catégories
 - **Explications détaillées** pour chaque question
 - **Système de score** avec pourcentage
 - **Animations de confettis** 🎉 (à partir de 60% de réussite)
 - **Design responsive** et accessible
-- **Sauvegarde automatique** des préférences utilisateur
+- **Backend optionnel** : Synchronisation avec SQLite via Prisma
 
 ## 🚀 Démarrage rapide
 
@@ -55,17 +59,32 @@ Cette application propose un quiz interactif sur le RGIE belge avec différentes
    ```
 
 4. **Ouvrir dans le navigateur**
-   ```
+
+   ```text
    http://localhost:3000
    ```
 
 ## 📱 Utilisation
 
+### Sessions, sauvegarde et reprise
+
+- Chaque tentative est associée à un nom de participant et à un identifiant unique (ID) généré automatiquement.
+- La progression (questions, réponses, score) est sauvegardée automatiquement dans le navigateur (localStorage).
+- Vous pouvez reprendre une session interrompue depuis l'écran d'accueil, ou la supprimer.
+- Optionnel: une synchronisation côté serveur (SQLite+Prisma) est disponible. Activez-la via le fichier `.env` à la racine:
+
+```ini
+REACT_APP_SYNC_ENABLED=true
+REACT_APP_API_BASE=http://localhost:4000
+```
+
+Puis démarrez l'API (voir section "Backend Prisma/SQLite" plus bas).
+
 ### 1. Mode sombre/clair 🌙☀️
 
 - Cliquez sur le bouton 🌙 (en haut à droite) pour activer le mode sombre
 - Cliquez sur ☀️ pour revenir au mode clair
-- Votre préférence est automatiquement sauvegardée
+- Votre préférence est automatiquement sauvegardée et appliquée au rafraîchissement
 
 ### 2. Sélection de catégorie
 
@@ -86,6 +105,7 @@ Au démarrage, choisissez parmi les 3 catégories disponibles :
 - Score final avec pourcentage
 - Animation de confettis si score ≥ 60% ✨
 - Options pour recommencer ou changer de catégorie
+- Accédez à la page "Résultats" via l'en-tête pour voir toutes les sessions sauvegardées
 
 ## 🎯 Contenu des questions
 
@@ -119,24 +139,67 @@ Au démarrage, choisissez parmi les 3 catégories disponibles :
 - **Canvas Confetti** - Animations de célébration
 - **CSS3** - Styles, animations et variables CSS
 - **HTML5** - Structure sémantique
-- **localStorage** - Sauvegarde des préférences utilisateur
+- **localStorage** - Sauvegarde des préférences utilisateur et sessions
+- **Express.js** - Serveur API (optionnel)
+- **Prisma** - ORM pour SQLite (optionnel)
+- **SQLite** - Base de données (optionnel)
+
+## 🗄️ Backend Prisma/SQLite (optionnel)
+
+Une petite API Node/Express avec Prisma et SQLite est fournie pour synchroniser les sessions:
+
+1. Installation des dépendances côté serveur
+
+   ```bash
+   cd server
+   npm install
+   ```
+
+2. Initialiser Prisma et la base SQLite
+
+   ```bash
+   npx prisma generate
+   npx prisma migrate dev --name init
+   ```
+
+3. Démarrer l'API
+
+   ```bash
+   npm run start
+   ```
+
+L'API écoute par défaut sur <http://localhost:4000>.
+
+Endpoints utiles:
+
+- POST /sessions — upsert d'une session (payload JSON)
+- GET /sessions/:id — récupérer une session par ID
 
 ## 📁 Structure du projet
 
-```
+```text
 quiz-rgie/
 ├── public/
 │   ├── index.html
 │   └── RGIE_2019_v2.pdf
 ├── src/
 │   ├── components/
-│   │   └── Quiz.js
+│   │   ├── Quiz.js
+│   │   └── Results.js
 │   ├── data/
 │   │   └── questions.json
 │   ├── App.js
 │   ├── App.css
 │   └── index.js
+├── server/
+│   ├── prisma/
+│   │   ├── schema.prisma
+│   │   └── migrations/
+│   ├── server.js
+│   ├── package.json
+│   └── .env
 ├── package.json
+├── .env
 └── README.md
 ```
 
@@ -239,27 +302,3 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 ---
 
 Fait avec ❤️ pour la communauté électrique belge
-
-## 🌙 Mode sombre
-
-L'application propose un **mode sombre** complet pour améliorer l'expérience utilisateur :
-
-### Fonctionnalités
-
-- **Basculement intuitif** avec bouton 🌙/☀️ en en-tête
-- **Persistance** - Votre choix est automatiquement sauvegardé
-- **Transitions fluides** entre les modes (0.3s)
-- **Variables CSS** pour une gestion centralisée des couleurs
-- **Compatible** avec tous les éléments de l'interface
-
-### Avantages
-
-- 👁️ **Réduction de la fatigue oculaire** lors de sessions prolongées
-- 🔋 **Économie d'énergie** sur les écrans OLED/AMOLED
-- 🌃 **Utilisation confortable** dans des environnements sombres
-- 🎨 **Design moderne** et professionnel
-
-### Couleurs optimisées
-
-- **Mode clair** : Blanc/gris clair pour une lecture classique
-- **Mode sombre** : Noir profond/gris foncé pour le confort visuel
